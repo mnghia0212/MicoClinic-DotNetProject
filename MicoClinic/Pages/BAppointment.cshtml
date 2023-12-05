@@ -1,0 +1,69 @@
+﻿@page
+@model MicoClinic.Pages.AppointmentModel
+
+<link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+<div class="d-flex heading_container heading_center text-center mt-3 mb-2">
+    <h2 style=" font-size:35px">
+        Book<span> Appointments</span>
+    </h2>
+</div>
+
+<div class="container  p-4 pl-5 pr-5 d-flex flex-column justify-content-between"
+     style="border-radius:10px; box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06); height:650px">
+     @if (Model.Appointments.Any())
+    {
+        <table class="table table-hover table-striped">
+            <thead class="bg-dark text-white text-center">
+                <tr>
+                    <td>Appointment Id</td>
+                    <th>Patient Name</th>
+                    <th>Symptoms</th>
+                    <th>Doctor Name</th>
+                    <th>Department</th>                                  
+                    <th>Date and Time</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var appointment in Model.Appointments)
+                {
+                    <tr>
+                        <td>@appointment.AppointmentId</td>
+                        <td>@appointment.PatientName</td>
+                        <td>@appointment.Symptoms</td>
+                        <td>@appointment.DoctorName</td>
+                        <td>@appointment.DepartmentName</td>                                                 
+                        <td>@appointment.AppointmentDateTime</td>
+                        <td>
+                            <form method="post" asp-page-handler="Delete" asp-route-appointmentId="@appointment.AppointmentId">
+                                <button class="btn-danger" type="submit">
+                                    Remove
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="text-center text-dark" style="margin-top:270px">
+            <h3>There is no booked appointment...
+                <span><i class="fa-regular fa-face-frown"></i></span>
+            </h3>
+        </div>
+    }
+
+    
+    <div class="d-flex flex-row" style="gap:7px">
+        <a href="/" class="btn bg-dark text-white ">Return to home</a>
+        @if (Model.Appointments.Any())
+        {
+            <form method="post" asp-page-handler="DeleteAll">
+                <button type="submit" class="btn bg-danger text-white">Remove all the appointments</button>
+            </form>
+        }
+    </div>
+</div>
+
+

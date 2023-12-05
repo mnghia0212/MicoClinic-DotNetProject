@@ -1,0 +1,132 @@
+﻿@model DoctorsListViewModel
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Doctor</title>
+
+
+    <!-- bootstrap core css -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <!--font-awesome-->
+    <link href="/lib/font-awesome/css/all.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+    <div class="d-flex heading_container heading_center text-center mt-3">
+        <h2 style="margin:0; font-size:35px" >
+            Our<span> Doctor</span>
+        </h2>
+    </div>
+    <div class="p-4 m-4 mt-3 d-flex flex-row justify-content-around" 
+         style="border-radius:10px; box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06); height:500px"
+         >
+        
+        <div id="departments" class=" mb-2 p-4 d-flex align-items-center">
+            <vc:navigation-menu />
+        </div>
+
+        <div class="d-flex flex-column justify-content-center ">
+            
+            <div class="table-responsive mt-5">
+                <table class="table  table-hover text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Experience</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model?.Doctors ?? Enumerable.Empty<Doctor>())
+                        {
+                            @await Html.PartialAsync("_DoctorSummary", item)
+                        }
+                    </tbody>
+
+
+
+                </table>
+            </div>
+            <div page-model="@Model?.PagingInfo"
+                 page-action="Doctor"
+                 page-classes-enable="true"
+                 page-class="btn"
+                 page-class-normal="btn-outline-dark"
+                 page-class-selected="btn-dark text-white" class="btn pull-right mt-2"
+                 page-url-department="@Model?.CurrentDepartment!">
+            </div>
+
+      
+        </div>
+       
+       
+    </div>
+
+   
+
+    
+    <!-- jQery -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <!-- custom js -->
+    <script src="/js/custom.js"></script>
+
+    @* <script>
+
+        
+        function handleBookButtonClick(buttonElement) {
+            // Lấy ID bác sĩ và chuyên khoa từ thuộc tính dữ liệu của nút
+            const doctorId = buttonElement.closest('tr').getAttribute('data-doctor-id');
+            const department = buttonElement.closest('tr').getAttribute('data-department');
+
+            // Chuyển hướng đến Index.cshtml với bác sĩ và chuyên khoa được chọn trước
+            window.location.href = `/Home/Index?department=${department}&doctorId=${doctorId}`;
+        }
+   
+    </script>
+ *@
+   
+
+</body>
+
+</html>

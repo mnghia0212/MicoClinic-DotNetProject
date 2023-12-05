@@ -1,0 +1,79 @@
+﻿@page "/admin/doctors"
+@page "/admin"
+@inherits OwningComponentBase<IClinicRepository>
+
+<h3>Doctors</h3>
+
+@if (DoctorData.Any())
+{
+    <table class="table  text-center table-hover mt-3">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Gender</th>
+                <th>Experience</th>
+                <th>Email</th>
+                <th>Process</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (Doctor d in DoctorData)
+            {
+                <tr>
+                    <td>@d.DoctorId</td>
+                    <td>@d.Name</td>
+                    <td>@d.Department</td>
+                    <td>@d.Gender</td>
+                    <td>@d.Experience</td>
+                    <td>@d.Email</td>
+                    <td>
+                        <NavLink class="btn btn-info btn">Details</NavLink>
+                        <NavLink class="btn btn-warning btn">Edit</NavLink>
+                        <NavLink class="btn btn-danger btn">Delete</NavLink>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="text-center mt-5">
+        <h4>
+
+            There is no doctor :(
+
+        </h4>
+    </div>
+  
+}
+
+
+@code {
+    public IClinicRepository Repository => Service;
+    public IEnumerable<Doctor> DoctorData { get; set; } = Enumerable.Empty<Doctor>();
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+    public async Task UpdateData()
+    {
+        DoctorData = await Repository.Doctor.ToListAsync();
+    }
+
+    
+    // public async Task DeleteProduct(Doctor p)
+    // {
+    //     Repository.DeleteProduct(p);
+    //     await UpdateData();
+    // }
+    // public string GetDetailsUrl(long id) => $"/admin/products/details/{id}";
+    // public string GetEditUrl(long id) => $"/admin/products/edit/{id}";
+}

@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MicoClinic
+build_property.RootNamespace = MicoClinic
+build_property.ProjectDir = D:\Năm 3 HKI\.Net\Source code\net\MicoClinic\MicoClinic\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Năm 3 HKI\.Net\Source code\net\MicoClinic\MicoClinic
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/Appointments.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQXBwb2ludG1lbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/Doctors.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRG9jdG9ycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/Routed.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUm91dGVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/BAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQkFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/Completed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxldGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/_AppointmentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0FwcG9pbnRtZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Home/Doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Home/Testimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0aW1vbmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Home/Treatment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmVhdG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Shared/Components/NavigationMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2aWdhdGlvbk1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Shared/_DoctorSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2N0b3JTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Năm 3 HKI/.Net/Source code/net/MicoClinic/MicoClinic/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

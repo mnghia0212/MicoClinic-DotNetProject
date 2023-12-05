@@ -1,0 +1,60 @@
+﻿@page "/admin/appointments"
+@inherits OwningComponentBase<IAppointmentRepository>
+
+<h4>Appointment</h4>
+
+<table class="table table-hover text-center mt-3">
+    <thead class="bg-dark text-white">
+        <tr>
+            <th>Id</th>
+            <th>Patient Name</th>
+            <th>Systomps</th>
+            <th>Phone Number</th>
+            <th>Doctor Name</th>
+            <th>Department</th>
+            <th>Date and time</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+        @if (AllOrders.Any())
+        {
+            @foreach (Appointment a in AllOrders)
+            {
+                <tr>
+                    <td>@a.AppointmentId</td>
+                    <td>@a.PatientName</td>
+                    <td>@a.Symptoms</td>
+                    <td>@a.PhoneNumber</td>
+                    <td>@a.DoctorName</td>
+                    <td>@a.DepartmentName</td>
+                    <td>@a.AppointmentDateTime</td>
+                   
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="text-center">
+               
+                    No Appointment
+   
+            </tr>
+           
+        }
+    </tbody>
+</table>
+@code {
+    public IAppointmentRepository Repository => Service;
+    public IEnumerable<Appointment> AllOrders { get; set; } = Enumerable.Empty<Appointment>();
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+    public async Task UpdateData()
+    {
+        AllOrders = await Repository.Appointments.ToListAsync();
+       
+    }
+}

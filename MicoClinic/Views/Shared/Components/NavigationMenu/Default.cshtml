@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+<div class="d-flex flex-column">
+    <a class="btn btn-outline-dark mb-4"
+       asp-action="Doctor" asp-controller="Home" asp-route-department="">
+        Back to list
+    </a>
+    @foreach (string department in Model ?? Enumerable.Empty<string>())
+    {
+        <a class="mb-2 btn @(department ==  ViewBag.SelectedCategor ? "btn-dark text-white" : "btn-outline-dark")"
+           asp-action="Doctor" asp-controller="Home"
+           asp-route-department="@department"
+           asp-route-doctorPage="1">
+            @department
+        </a>
+    }
+</div>

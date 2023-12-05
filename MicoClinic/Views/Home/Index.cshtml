@@ -1,0 +1,545 @@
+﻿@model Appointment
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Mico</title>
+
+
+    <!-- bootstrap core css -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="/jquery-datetimepicker/jquery.datetimepicker.css" />
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <!--font-awesome-->
+    <link href="/lib/font-awesome/css/all.css" rel="stylesheet" />
+
+   
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="detail-box">
+                                      
+                                        <h1>
+                                            Mico 
+                                            <span> <br />
+                                                Clinic
+                                            </span>
+                                        </h1>
+                                        <p>
+                                            Mico Clinic - Your trusted healthcare partner in Ho Chi Minh City.
+                                        </p>
+                                        <a href="#book-section">Book Appointment </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="img-box">
+                                        <img src="/images/slider-image1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="detail-box">
+                                       
+                                        <h1>
+                                            Mico 
+                                            <span>
+                                                <br />
+                                                Clinic
+                                            </span>
+                                        </h1>
+                                        <p>
+                                            Book an appointment online - Quick, easy, and efficient.
+                                        </p>
+                                        <a href="#book-section">Book Appointment</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="img-box">
+                                        <img src="/images/slider-image2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="detail-box">
+                                       
+                                        <h1>
+                                            Mico 
+                                            <span>
+                                                <br />
+                                                Clinic
+                                            </span>
+                                        </h1>
+                                        <p>
+                                            Comprehensive healthcare for everyone.
+                                        </p>
+                                        <a href="#book-section">Book Appointment</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="img-box">
+                                        <img src="/images/slider-image3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_btn-box">
+                    <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+                        <img src="/images/prev.png" alt="">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+                        <img src="/images/next.png" alt="">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!-- end slider section -->
+    </div>
+
+
+    <!-- book section -->
+
+    <section class="book_section layout_padding" id="book-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form method="post" asp-action="Index">
+                        <h4>
+                            BOOK <span>APPOINTMENT</span>
+                        </h4>
+                        <div class="form-row ">
+                            <div class="form-group col-lg-4">
+                                <label asp-for="PatientName">Patient Name </label>
+                                <input asp-for="PatientName" class="form-control"
+                                       id="inputPatientName" placeholder="Enter your name">
+
+                                <span  asp-validation-for="PatientName" class="text-danger mt-1"></span>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label asp-for="DepartmentName">Department's Name </label>
+                                <select asp-for="DepartmentName" class="form-control wide" 
+                                        id="inputDepartmentName">
+                                    <option value="">Select a department</option>
+                                    @foreach (var department in ViewBag.Departments)
+                                    {
+                                        <option value="@department.Text">@department.Text</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="DepartmentName" class="text-danger mt-1"></span>
+
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label asp-for="DoctorName">Doctor's Name </label>                         
+                                <select asp-for="DoctorName" class="form-control wide" id="inputDoctorName">
+                                    <option value="">Please select a department first</option>
+                                </select>
+                                <span asp-validation-for="DoctorName" class="text-danger mt-1"></span>
+
+                            </div>
+                            
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-lg-4">
+                                <label asp-for="PhoneNumber">Phone Number</label>
+                                <input asp-for="PhoneNumber" class="form-control" 
+                                        id="inputPhone" placeholder="XXXXXXXXXX">
+                                <span asp-validation-for="PhoneNumber" class="text-danger mt-1"></span>
+
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label asp-for="Symptoms">Symptoms</label>
+                                <input asp-for="Symptoms" class="form-control" id="inputSymptoms"
+                                       placeholder="Enter your symptoms">
+                                <span asp-validation-for="Symptoms" class="text-danger mt-1"></span>
+
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label asp-for="AppointmentDateTime">Choose Date </label>
+                                <div class="input-group">
+                                    <input type="datetime-local" asp-for="AppointmentDateTime" class="form-control" id="inputDate" />
+                                    <span asp-validation-for="AppointmentDateTime" class="text-danger mt-1"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-box d-flex flex-row align-items-center">
+                            <input class="btn btn-seedoctor" type="submit" value="Submit" />
+                            <p class="p-2 mb-0 mt-2">or</p>
+                            <a class="btn btn-seedoctor" asp-action="Doctor">Overview our doctors</a>
+                        </div>             
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end book section -->
+    <!-- about section -->
+
+    <section class="about_section">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="/images/about1-img.jpg" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                About <span>Clinic</span>
+                            </h2>
+                        </div>
+                        <p class="text-justify">
+                            Just make a call to our hotline or book on this website,
+
+                            you gonna meet out best experienced doctors and get the best medical care.
+
+                            Mico Clinic is a trusted healthcare provider in Ho Chi Minh City.
+
+                            We offer a wide range of medical services, including general medicine,
+
+                            women's health, men's health, pediatrics, and more.
+
+                            Our doctors are highly experienced and qualified, and they are committed
+
+                            to providing our patients with the best possible care.
+
+                            To make an appointment with Mico Clinic, you can call our hotline or book online.
+
+                            Our appointment booking system is quick and easy to use, and it allows you
+
+                            to choose the time and date that works best for you.
+
+                            We believe that everyone deserves access to quality healthcare, and we are committed
+
+                            to making it easy for our patients to get the care they need.
+
+                            Call us today to schedule an appointment and experience the difference that
+
+                            Mico Clinic can make.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end about section -->
+    <!-- treatment section -->
+
+    <section class="treatment_section layout_padding">
+        <div class="side_img">
+            <img src="/images/treatment.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>
+                    Clinic <span>Treatment</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="/images/t1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h4>
+                                Nephrologist Care
+                            </h4>
+                            <p>
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="/images/t2.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h4>
+                                Eye Care
+                            </h4>
+                            <p>
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="/images/t3.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h4>
+                                Pediatrician Clinic
+                            </h4>
+                            <p>
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="/images/t4.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h4>
+                                Parental Care
+                            </h4>
+                            <p>
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end treatment section -->
+   
+    <!-- client section -->
+    <section class="client_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    <span>Testimonial</span>
+                </h2>
+            </div>
+        </div>
+        <div class="container px-0">
+            <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="box">
+                            <div class="client_info">
+                                <div class="client_name">
+                                    <h5>
+                                        Morijorch
+                                    </h5>
+                                    <h6>
+                                        Default model text
+                                    </h6>
+                                </div>
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <p>
+                                editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="client_info">
+                                <div class="client_name">
+                                    <h5>
+                                        Rochak
+                                    </h5>
+                                    <h6>
+                                        Default model text
+                                    </h6>
+                                </div>
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <p>
+                                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="client_info">
+                                <div class="client_name">
+                                    <h5>
+                                        Brad Johns
+                                    </h5>
+                                    <h6>
+                                        Default model text
+                                    </h6>
+                                </div>
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <p>
+                                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_btn-box">
+                    <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end client section -->
+
+   
+   
+
+    <!-- jQery -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- datepicker -->
+    
+    <!-- custom js -->
+    <script src="/js/custom.js"></script>
+
+    <script>
+
+        
+        const doctorName = window.location.search.substring(1).split('&')[1].split('=')[1];
+        const department = window.location.search.substring(1).split('&')[0].split('=')[1];
+        document.querySelector('#inputDepartmentName').value = department;
+        document.querySelector('#inputDoctorName').value = doctorName;
+
+    </script>
+    <script>
+
+       
+      
+        document.addEventListener("DOMContentLoaded", function () {
+            var departmentSelect = document.getElementById('inputDepartmentName');
+            var doctorSelect = document.getElementById('inputDoctorName');
+
+            departmentSelect.onchange = function () {
+                var selectedDepartment = departmentSelect.value;
+
+                // Xóa các tùy chọn hiện tại trong DoctorName dropdown
+                while (doctorSelect.options.length > 0) {
+                    doctorSelect.remove(0);
+                }
+
+                // Thêm tùy chọn "Select a doctor" vào DoctorName dropdown
+                var defaultOption = new Option("Select a doctor", "");
+                doctorSelect.add(defaultOption);
+
+                // Gửi yêu cầu AJAX đến server để lấy danh sách các bác sĩ theo chuyên khoa
+                fetch('/Home/GetDoctorsByDepartment?department=' + selectedDepartment)
+                    .then(response => response.json())
+                    .then(data => {
+                        data.doctors.forEach(function (doctor) {
+                            var option = new Option(doctor.name);
+                            doctorSelect.add(option);
+                        });
+                    });
+
+            };
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var department = urlParams.get('department');
+            var doctorName = urlParams.get('doctorName');
+
+            if (department) {
+                departmentSelect.value = department;
+                departmentSelect.onchange();
+                if (doctorName) {
+                    setTimeout(function () {
+                        doctorSelect.value = doctorName;
+                    }, 1000); // Đợi danh sách bác sĩ được cập nhật
+                }
+            }
+        });
+        
+      
+
+    </script>
+        
+   
+
+    
+
+   
+
+    <style>
+        .btn-seedoctor {
+            background-color: #252525;
+            color: #ffffff;
+            padding: 10px 45px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        .btn-seedoctor:hover {
+            
+            color: #ffffff;
+            
+        }
+    </style>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+﻿@page
+
+<div class="text-center p-3 container d-flex justify-content-center" 
+        style="border-radius:10px; box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06); height:500px" ">
+    <div class="mt-5">
+       
+        <h2>Thanks</h2>
+        <p>Thanks for booking with our clinic #@AppointmentId</p>
+        <p>We'll send your appointment to our doctors asap !</p>
+        <div class="d-flex flex-row p-2" style="gap: 7px">
+            <a class="btn bg-dark text-white" href="/">Return to home</a>
+            <a class="btn bg-dark text-white" href="/BAppointment">See the book appointments</a>
+        </div>
+
+ 
+    </div>
+    
+</div>
+
+@functions {
+    [BindProperty(SupportsGet = true)]
+    public string? AppointmentId { get; set; }
+}

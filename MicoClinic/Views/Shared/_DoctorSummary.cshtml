@@ -1,0 +1,38 @@
+﻿@model Doctor
+<tr>
+    <td>@Model.Name</td>
+    <td>@Model.Department</td>
+    <td>@Model.Age</td>
+    <td>@Model.Gender</td>
+    <td>@Model.Experience<span> years</span></td>
+    <td>@Model.Email</td>
+    <td>
+        <a class="btn btn-outline-dark" href="/Home/Index?department=@Model.Department&doctorName=@Model.Name">Book</a>
+    </td>
+   
+   @*  <td data-department="@Model.Department" data-doctor-id = "@Model.Name">
+    <button class="blue-gradient-button" onclick="handleBookButtonClick(this)" 
+    data-target="#book-section">Book</button></td> *@
+</tr>
+
+@* <script>
+    function handleBookButtonClick(buttonElement) {
+        // Lấy ID bác sĩ và chuyên khoa từ thuộc tính dữ liệu của nút
+        const doctorName = buttonElement.closest('td').getAttribute('data-doctor-id');
+        const department = buttonElement.closest('td').getAttribute('data-department');
+
+        // Chuyển hướng đến Index.cshtml với bác sĩ và chuyên khoa được chọn trước
+        window.location.href = `/Home/Index?department=${department}&doctorName=${doctorName}`;
+       
+    }
+    
+</script>    *@
+
+<script>
+    function bookAppointment(department, doctorName) {
+        var url = `/Index?department=${encodeURIComponent(department)}&doctorName=${encodeURIComponent(doctorName)}`;
+        window.location.href = url;
+    }
+</script>
+
+

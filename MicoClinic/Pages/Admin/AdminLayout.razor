@@ -1,0 +1,67 @@
+﻿@inherits LayoutComponentBase
+
+<!-- bootstrap core css -->
+<link href="/css/bootstrap.css" rel="stylesheet" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!--owl slider stylesheet -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<!-- font awesome style -->
+<!-- nice select -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+<!-- datepicker -->
+<link rel="stylesheet" href="/jquery-datetimepicker/jquery.datetimepicker.css" />
+<!-- Custom styles for this template -->
+<link href="/css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="/css/responsive.css" rel="stylesheet" />
+<!--font-awesome-->
+<link href="/lib/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+<link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+<link href="/lib/font-awesome/css/all.css" rel="stylesheet" />
+
+
+<header class="header_section">
+    <div class="header_bottom pt-4 pb-4 pl-3 pr-3">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex heading_container">
+                <h2 style="margin:0" class="text-dark">
+                    MICO <span class="text-white">Adminstration</span>
+                </h2>
+            </div>
+            <div >
+                <a class="btn btn-dark" href="/">Log out</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid">
+    <div class=" mt-5 mb-5 p-4 d-flex flex-row ml-2 mr-2"
+         style="border-radius:10px; box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.09); height:750px">
+        <div class="col-3 container" style="border-right: 2px dotted #343a40">
+            <div class="d-flex flex-column container" style="gap:8px">
+                <NavLink class="btn btn-outline-dark"
+                         href="/admin/doctors"
+                         ActiveClass="btn-dark text-white"
+                         Match="NavLinkMatch.Prefix">
+                    Doctors
+                </NavLink>
+                <NavLink class="btn btn-outline-dark"
+                         href="/admin/appointments"
+                         ActiveClass="btn-dark text-white"
+                         Match="NavLinkMatch.Prefix">
+                    Appointments
+                </NavLink>
+            </div>
+        </div>
+        <div class="col">
+            @Body
+        </div>
+    </div>
+</div>
+

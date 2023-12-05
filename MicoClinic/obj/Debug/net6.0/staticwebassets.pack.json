@@ -1,0 +1,237 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\images\\about1-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about1-img.jpg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\images\\slider-image1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider-image1.jpg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\images\\slider-image2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider-image2.jpg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\images\\slider-image3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider-image3.jpg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\images\\treatment.jpg",
+      "PackagePath": "staticwebassets\\images\\treatment.jpg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.css",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.full.js",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.full.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.full.min.js",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.full.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.js",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\jquery-datetimepicker\\jquery.datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\jquery-datetimepicker\\jquery.datetimepicker.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\Năm 3 HKI\\.Net\\Source code\\net\\MicoClinic\\MicoClinic\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MicoClinic.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MicoClinic.props",
+      "PackagePath": "build\\MicoClinic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MicoClinic.props",
+      "PackagePath": "buildMultiTargeting\\MicoClinic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MicoClinic.props",
+      "PackagePath": "buildTransitive\\MicoClinic.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
